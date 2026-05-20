@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+}
+
+body{
+    background: rgb(181, 192, 201);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Área do Formulário */
+.formulario{padding: 40px;}
+.formulario h1{
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.formulario p{
+    margin-bottom: 30px;
+}
+
+/* Inputs */
+.area-input {margin-bottom: 20px;}
+.area-input label{
+    display: block;
+    margin-bottom: 8px;
+}
+.area-input input, .area-input select{
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+.area-input input::-webkit-inner-spin-button, .area-input input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+span{color: rgb(83, 12, 12);}
+
+button{
+    width: 100%;
+    padding: 14px;
+    background: rgb(14, 23, 151);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background: rgb(8, 7, 83);
+    transform: scale(1.02);
+}
+
+/* Resultado */
+.container-resultado{
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+}
+.container-resultado img{
+    width: 250px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.container-resultado h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+}

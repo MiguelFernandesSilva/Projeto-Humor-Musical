@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Miguel Fernandes Silva">
+    <meta name="description" content="Um site que sugere tipos de música baseados no humor do usuário">
+    <meta name="keywords" content="Música, Humor, Sentimento">
+    <title> Humor Músical </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/music.png">
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <h1> Avaliador de Humor Músical </h1>
+            <p> Olá! Por favor, informe os dados abaixo: </p>
+
+            <!-- Áreas onde os Inputs Estão -->
+            <!-- Sono -->
+            <div class="area-input">
+                <label for="sono"> Horas de sono (De 0 a 10) <span>*</span></label>
+                <input type="number" id="sleepTime" placeholder="Ex: 8">
+            </div>
+
+            <!-- Energia -->
+            <div class="area-input">
+                <label for="energia"> Nível de energia (De 0 a 10) <span>*</span></label>
+                <input type="number" id="energy" placeholder="Ex: 5">
+            </div>
+
+            <!-- Humor -->
+            <div class="area-input">
+                <label for="humorSelect"> Como você está se sentindo? <span>*</span></label>
+                <select id="humor" name="humorSelect">
+                    <option> Animado(a) </option>
+                    <option> Feliz </option>
+                    <option> Cansado(a) </option>
+                    <option> Estressado(a) </option>
+                    <option> Bravo(a) </option>
+                </select>
+            </div>
+
+        <button type="submit" id="checkBtn" onclick="analize()"> Analisar Humor </button>
+        </div>
+
+        <!-- Resultado -->
+        <div class="container-resultado">
+            <img class="imagem" id="imageResult" src="/assets/music.png" alt="Música" title="Música">
+            <h2 id="titleResult"> Seu resultado aparecerá aqui: </h2>
+            <p id="textResult"> Informe os dados ao lado para descobrir sua recomendação de música. </p>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
